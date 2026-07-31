@@ -1,7 +1,7 @@
 {
-  "name": "@harbormaster/sdk",
+  "name": "@system-as-code/sdk",
   "version": "1.0.1",
-  "description": "Harbormaster API for programmatic access to Harbormaster to creating fully functional software system. Choose from a library of certified technology blueprints and industry domain models.",
+  "description": "API for programmatic access to Harbormaster to creating fully functional software system. Choose from a library of certified technology blueprints and industry domain models.",
   "main": "index.js",
   "directories": {
     "lib": "lib"

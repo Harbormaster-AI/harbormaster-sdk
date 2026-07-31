@@ -186,6 +186,15 @@ self = module.exports =  {
         });
     },
 
+
+	checkSystemCertification: ( certId ) => {
+		return new Promise(function(resolve,reject) {
+			systemHandler.checkCertification(certId)
+				.then(function(result) {
+					resolve( result );
+				}).catch(err => reject(err));
+		});
+	},
 	// -------------------------------------------------
 	// Archive Related Functions
 	// -------------------------------------------------
