@@ -31,8 +31,8 @@ self = module.exports =  {
 			if ( inputToken ) {	// authenticate the token from the remote server
 
 				// pull from the config
-                var config 			= require('config');
-                var serverConfig 	= config.get(constants.SERVER_CONFIG);
+                var config 					= require('config');
+                var serverConfig 				= config.get(constants.SERVER_CONFIG);
                 var host 			= self.endpoint();
 
                 // use what was provided since it take precedent but do not store it
@@ -159,9 +159,9 @@ self = module.exports =  {
 	// System Related Functions
 	// -------------------------------------------------
 	
-	generateSystem : (yamlFilePath) => {
+	generateSystem : (yamlFilePath, inputOptions) => {
 		return new Promise(function(resolve, reject) {
-			generateHandler.generateSystem(yamlFilePath)
+			generateHandler.generateSystem(yamlFilePath, inputOptions)
 				.then(function(result) {
 					resolve( result );
 				}).catch(err => reject(err));
