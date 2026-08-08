@@ -3,7 +3,7 @@
   "harbormaster": {
     "version": "2.1.0",
     "serverConfig": {
-      "host": "http://localhost"
+      "host": "http://platform.harbormaster.net"
     }
 
   }
