@@ -73,7 +73,7 @@ self = module.exports =  {
         const platformUrl =
             process.env.PLATFORM_URL ||
             conf.get("endpoint") ||
-            "https://platform.harbormaster.net";
+            "http://platform.harbormaster.net";
 
         return platformUrl;
     },
